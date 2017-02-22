@@ -45,3 +45,8 @@ test:
 .PHONY: clean
 clean:
 	npm run clean
+
+.PHONY: gen_dockerfiles
+gen_dockerfiles:
+	$(script_env) hack/gen_dockerfiles.sh
+
